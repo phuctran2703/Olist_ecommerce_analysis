@@ -38,7 +38,7 @@ Here is a segment of product data from the Olist dataset.
 5. Power BI: Visualizes the results stored in Synapse SQL.
 
 ## Deployment instructions
-##### 1. Upload dataset from your decive to HDFS
+### 1. Upload dataset from your decive to HDFS
 - Run `start-dfs.cmd` and `start-yarn.cmd` on CMD.
 - Run `hdfs dfs -put <path folder in your device> <path folder on hdfs>`
 - Example in my device:
@@ -46,25 +46,25 @@ Here is a segment of product data from the Olist dataset.
 - Check saved dataset on HDFS through link http://localhost:9870/explorer.html#/
 ![dataOnHdfs](picture/dataOnHdfs.png)
 
-##### 2. Transfering data from HDFS to Azure Data Lake Gen2 via Azure Data Factory
+### 2. Transfering data from HDFS to Azure Data Lake Gen2 via Azure Data Factory
 - In the Synapse Analytics Studio, navigate to the Integrate section and create a new pipeline.
 - Within the pipeline, add a Copy Data activity. 
 - Specify the source as a link to the file stored on Hadoop Distributed File System (HDFS), and designate the sink by selecting the desired file name and folder for storage on ADLv2.
 - Finally, initiate the pipeline by triggering it manually.
 ![pipeline](picture/pipeline.png)
 
-##### 3. Integrate data from Synapse SQL to Power BI
+### 3. Integrate data from Synapse SQL to Power BI
 - In the Synapse Analytics Workspace, locate the Serverless SQL endpoint and copy its address.
 ![pipeline](picture/linksqlserver.png)
 - Open Power BI, click on "Get Data," select Azure Synapse, and paste the copied Serverless SQL endpoint. Then, choose the table you wish to visualize.
 ![pipeline](picture/connectPowerbi.png)
 
 ## Result
-##### 1. Olist data analysis
+### 1. Olist data analysis
 ![pipeline](picture/statistical.png)
-##### 2. Recommend Products for Customers
+### 2. Recommend Products for Customers
 ![pipeline](picture/recommendProduct.png)
-##### 3. Customer Clustering
+### 3. Customer Clustering
 ![pipeline](picture/customerClustering.png)
 
 ## Conclude
