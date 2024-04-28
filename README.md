@@ -24,7 +24,7 @@ Here is a segment of product data from the Olist dataset.
 - Apache Spark: version 3.4
 
 ## Design model
-![Model](ModelDesign.png)
+![Model](picture/ModelDesign.png)
 
 ## Workflow
 1. The original data is stored in Hadoop HDFS in CSV format.
