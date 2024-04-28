@@ -1,4 +1,4 @@
-# Ecommerce analysis in Olist's retail dataset
+# Analysis of E-commerce within Olist's Retail Dataset
 ## Project overview
 The project aims to analyze the ecommerce dataset concerning **Olist retail**. The primary technologies employed include Hadoop, Azure Synapse Analytics, and Power BI. Hadoop serves as the data storage solution, Azure Synapse facilitates data analysis, and Power BI is utilized for data visualization.
 
